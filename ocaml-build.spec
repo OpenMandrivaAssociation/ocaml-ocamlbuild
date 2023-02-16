@@ -1,12 +1,14 @@
+%undefine _debugsource_packages
+
 %define  _empty_manifest_terminate_build 0
 %define subname ocamlbuild
 Name:		ocaml-ocamlbuild
-Version:	0.14.1
-Release:	2
+Version:	0.14.2
+Release:	1
 Summary:	Pre-Processor-Pretty-Printer for OCaml
 License:	LGPLv2+ with exceptions
 URL:		https://github.com/ocaml/ocamlbuild
-Source0:	https://github.com/ocaml/ocamlbuild/archive/%{subname}-0.14.1.tar.xz
+Source0:	https://github.com/ocaml/ocamlbuild/archive/refs/tags/%{version}.tar.gz
 Group:		Development/Other
 
 # This package used to be part of the upstream compiler.  We still
