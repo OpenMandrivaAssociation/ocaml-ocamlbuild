@@ -1,10 +1,9 @@
 %undefine _debugsource_packages
 
-%define  _empty_manifest_terminate_build 0
 %define subname ocamlbuild
 Name:		ocaml-ocamlbuild
 Version:	0.14.2
-Release:	1
+Release:	2
 Summary:	Pre-Processor-Pretty-Printer for OCaml
 License:	LGPLv2+ with exceptions
 URL:		https://github.com/ocaml/ocamlbuild
@@ -24,7 +23,7 @@ It had been superceded by 'dune'
 This package contains the runtime files.
 
 %prep
-%setup -qn %{subname}-%{version}
+%autosetup -p1 -n %{subname}-%{version}
 
 %build
 unset MAKEFLAGS
@@ -42,7 +41,7 @@ make
 %install
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_libdir}/ocaml/ocamlbuild
-make install DESTDIR=$RPM_BUILD_ROOT
+make install DESTDIR=$RPM_BUILD_ROOT CHECK_IF_PREINSTALLED=false
 
 rm $RPM_BUILD_ROOT%{_libdir}/ocaml/ocamlbuild/META
 
