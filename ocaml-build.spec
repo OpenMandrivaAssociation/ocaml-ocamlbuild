@@ -2,8 +2,8 @@
 
 %define subname ocamlbuild
 Name:		ocaml-ocamlbuild
-Version:	0.14.2
-Release:	4
+Version:	0.15.0
+Release:	1
 Summary:	Pre-Processor-Pretty-Printer for OCaml
 License:	LGPLv2+ with exceptions
 URL:		https://github.com/ocaml/ocamlbuild
