@@ -13,6 +13,7 @@ Group:		Development/Other
 # This package used to be part of the upstream compiler.  We still
 # need to keep it in lock step with the compiler, so whenever a new
 # compiler is released we will also update this package also.
+BuildRequires:	make
 BuildRequires:	ocaml
 Requires:	ocaml
 Provides:	ocamlbuild = %{EVRD}
