@@ -2,7 +2,7 @@
 
 %define subname ocamlbuild
 Name:		ocaml-ocamlbuild
-Version:	0.15.0
+Version:	0.16.1
 Release:	1
 Summary:	Pre-Processor-Pretty-Printer for OCaml
 License:	LGPLv2+ with exceptions
@@ -24,7 +24,7 @@ It had been superceded by 'dune'
 This package contains the runtime files.
 
 %prep
-%autosetup -p1 -n %{subname}-%{version}
+%autosetup -p1 -n ocamlbuild-0.16.1
 
 %build
 unset MAKEFLAGS
